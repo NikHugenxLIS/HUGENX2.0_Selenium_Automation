@@ -1,6 +1,7 @@
 package com.web.commonUtils;
-import java.io.IOException;
-import java.time.Duration;
+
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -10,8 +11,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-public class BaseClass 
+import java.io.IOException;
+
+public class BaseClass
 {
 	public WebDriver driver ;
     public  String BROWSER;
