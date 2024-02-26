@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 import org.testng.annotations.Test;
 
-public class Login extends BaseClass
+public class LoginTest extends BaseClass
 {
 	    @Test (retryAnalyzer =  Retry.class)
       public void loginInToTheApplication() throws IOException, InterruptedException
