@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 25.94 s <<< FAILURE! -- in TestSuite
-com.hugenx.runner.Login.loginInToTheApplication -- Time elapsed: 1.533 s <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 31.25 s <<< FAILURE! -- in TestSuite
+com.hugenx.runner.Login.loginInToTheApplication -- Time elapsed: 1.505 s <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
 element click intercepted: Element <button type="submit" class="loginBtn pointer">...</button> is not clickable at point (1140, 550). Other element would receive the click: <app-progress-bar-loader _ngcontent-ng-c750168442=""></app-progress-bar-loader>
   (Session info: chrome=121.0.6167.189)
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [64f0fe5f75e3018b1d8b789b06394883, clickElement {id=B5B593128271E5CD9E98839893C0C461_element_8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51982}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51982/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (64f0fe5f75e3018b1d8b789b06394883)] -> xpath: //button[@type='submit']]
-Session ID: 64f0fe5f75e3018b1d8b789b06394883
+Command: [803944f102073f1f2fc3f3bd2c76f6ba, clickElement {id=2DDD37B6BC3D476A2D3333DCC75A2C31_element_8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56718}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56718/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (803944f102073f1f2fc3f3bd2c76f6ba)] -> xpath: //button[@type='submit']]
+Session ID: 803944f102073f1f2fc3f3bd2c76f6ba
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)

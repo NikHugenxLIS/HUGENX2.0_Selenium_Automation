@@ -13,6 +13,8 @@ import org.testng.annotations.BeforeMethod;
 
 import java.io.IOException;
 
+import static java.lang.System.getProperty;
+
 public class BaseClass
 {
 	public WebDriver driver ;
@@ -28,7 +30,10 @@ public class BaseClass
 	{
 		
 		System.out.println("============Lauch the browser==========");
-		String browser = fLib.getPropertyKeyValue("BROWSER");
+         // Setting up the Global Parameter to take/Pass the Browser Name from Command Prompt
+		String browser = getProperty("BROWSER")!=null ? getProperty("BROWSER") : fLib.getPropertyKeyValue("BROWSER");
+
+		//String browser = fLib.getPropertyKeyValue("BROWSER");
 		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
