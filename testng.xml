@@ -6,7 +6,7 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="D:/Selenium Project/Selenium_Automation/src/test/java/com/hugenx/runner/Login.java">
         <classes>
-            <class name="com.hugenx.runner.Login">
+            <class name="com.hugenx.runner.LoginTest">
             <methods>
                 <include name="loginInToTheApplication"/>
             </methods>
