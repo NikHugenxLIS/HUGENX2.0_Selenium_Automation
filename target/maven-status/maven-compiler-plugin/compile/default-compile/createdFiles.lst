@@ -1,12 +1,23 @@
 com\web\commonUtils\ExcelDataDriven.class
+<<<<<<< HEAD
 com\web\commonUtils\Listeners.class
 com\web\commonUtils\Retry.class
 com\web\commonUtils\ScreenShotUtility.class
+=======
+com\web\hugenx_pages\LoginPage.class
+com\web\commonUtils\Listeners.class
+com\web\commonUtils\Retry.class
+com\web\commonUtils\ScreenShotUtility.class
+com\web\commonUtils\CommonHelper.class
+>>>>>>> 2bfb6d00a348c06371b535d00cbafdef3e623ebc
 com\web\commonUtils\FileUtility.class
 com\web\commonUtils\ExcelUtility.class
 com\web\commonUtils\ExtentReporter.class
 com\web\commonUtils\WebDriverUtility$1.class
 com\web\commonUtils\BaseClass.class
+<<<<<<< HEAD
 com\web\hugenx\pages\LoginPage.class
+=======
+>>>>>>> 2bfb6d00a348c06371b535d00cbafdef3e623ebc
 com\web\commonUtils\JavaUtility.class
 com\web\commonUtils\WebDriverUtility.class

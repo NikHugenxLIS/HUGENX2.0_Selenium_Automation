@@ -1,5 +1,9 @@
 package com.web.commonUtils;
 
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -10,7 +14,7 @@ public class FileUtility
 {
 	private WebDriver driver;
     static Properties properties;
-   private final String propertyFilePath = "D:/Selenium Project/Selenium_Automation/src/main/resources/CommonData/CommonData.properties";
+   private final String propertyFilePath = "D://Selenium Project//Selenium_Automation//src//main//resources//testData//CommonData//CommonData.properties";
 
 //         public FileUtility (WebDriver driver)
 //
@@ -81,6 +85,36 @@ public class FileUtility
 	}
 
 	
-	
+	/**
+     * Uploads a file using a Robot class to simulate keyboard actions.
+     * 
+     * @param filePath the full path to the file to be uploaded.
+     * @throws Exception if there is an error during the upload process.
+     */
+    public void uploadFile (String filePath) throws Exception {
+        // Create an instance of Robot class
+        Robot robot = new Robot();
+        robot.delay(5000);
+        // Create a StringSelection object and set the clipboard with the file path
+        StringSelection stringSelection = new StringSelection(filePath);
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+
+        // Simulate pressing Ctrl+V to paste the copied file path
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.delay(5000); // Small delay to ensure the key press is registered
+        robot.keyRelease(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+
+        // Simulate pressing Enter to confirm the file selection
+        robot.delay(5000); // Small delay before pressing Enter
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+
+        // Additional delay to allow the file picker to close
+        robot.delay(5000);
+    }
+
+
 
 }
