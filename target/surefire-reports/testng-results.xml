@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T00:50:05 IST" name="All Test Suite" finished-at="2024-02-29T00:50:30 IST" duration-ms="24847">
+  <suite started-at="2024-09-12T03:20:04 IST" name="All Test Suite" finished-at="2024-09-12T03:20:12 IST" duration-ms="7939">
     <groups>
     </groups>
-    <test started-at="2024-02-29T00:50:05 IST" name="D:/Selenium Project/Selenium_Automation/src/test/java/com/hugenx/runner/Login.java" finished-at="2024-02-29T00:50:30 IST" duration-ms="24847">
+    <test started-at="2024-09-12T03:20:04 IST" name="D:/Selenium Project/Selenium_Automation/src/test/java/com/hugenx/runner/Login.java" finished-at="2024-09-12T03:20:12 IST" duration-ms="7939">
       <class name="com.hugenx.runner.LoginTest">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.hugenx.runner.LoginTest@77102b91]" started-at="2024-02-29T00:50:05 IST" name="configBC" finished-at="2024-02-29T00:50:10 IST" duration-ms="4743" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.hugenx.runner.LoginTest@7fb95505]" started-at="2024-09-12T03:20:04 IST" name="configBC" finished-at="2024-09-12T03:20:06 IST" duration-ms="2406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.hugenx.runner.LoginTest@77102b91]" started-at="2024-02-29T00:50:10 IST" name="configBM" finished-at="2024-02-29T00:50:29 IST" duration-ms="19108" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.hugenx.runner.LoginTest@7fb95505]" started-at="2024-09-12T03:20:06 IST" name="configBM" finished-at="2024-09-12T03:20:11 IST" duration-ms="4732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="loginInToTheApplication()[pri:0, instance:com.hugenx.runner.LoginTest@77102b91]" started-at="2024-02-29T00:50:29 IST" name="loginInToTheApplication" finished-at="2024-02-29T00:50:30 IST" duration-ms="947" status="PASS">
+        <test-method signature="loginInToTheApplication()[pri:0, instance:com.hugenx.runner.LoginTest@7fb95505]" started-at="2024-09-12T03:20:11 IST" name="loginInToTheApplication" finished-at="2024-09-12T03:20:12 IST" duration-ms="764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInToTheApplication -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.hugenx.runner.LoginTest@77102b91]" started-at="2024-02-29T00:50:30 IST" name="configAM" finished-at="2024-02-29T00:50:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.hugenx.runner.LoginTest@7fb95505]" started-at="2024-09-12T03:20:12 IST" name="configAM" finished-at="2024-09-12T03:20:12 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.hugenx.runner.LoginTest@77102b91]" started-at="2024-02-29T00:50:30 IST" name="configAC" finished-at="2024-02-29T00:50:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.hugenx.runner.LoginTest@7fb95505]" started-at="2024-09-12T03:20:12 IST" name="configAC" finished-at="2024-09-12T03:20:12 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->

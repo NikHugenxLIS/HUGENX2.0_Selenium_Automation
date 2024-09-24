@@ -1,5 +1,9 @@
 package com.web.commonUtils;
 
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
@@ -24,7 +28,7 @@ import com.google.common.io.Files;
 
 public class WebDriverUtility 
 {
-	public WebDriver driver;
+	public  WebDriver driver;
 	
 	public WebDriverUtility (WebDriver driver)
 
@@ -33,7 +37,7 @@ public class WebDriverUtility
 	}
 	
 	
-	
+	String filepath;
 	
 	
 	/**
@@ -545,7 +549,7 @@ public class WebDriverUtility
 
 
 
-public  void sendKeys(By locator, String inputText) {
+public  void sendKeys(By locator, String inputText, Duration timeoutInSeconds) {
 
 	if (driver != null) {
 		WebElement element = driver.findElement(locator);
@@ -553,12 +557,60 @@ public  void sendKeys(By locator, String inputText) {
 		element.sendKeys(inputText);
 	}
 
+
+
 }
 
+	public void clickElement(By locator, Duration timeoutInSeconds) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
+			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+			element.click();
+		} catch (Exception e) {
+			System.out.println("Error clicking on element: " + e.getMessage());
+			// Optionally rethrow the exception or handle it based on your test requirements
+		}	
+		
+		
+	}
 
 
+	/**
+     * Uploads a file to a web page using Selenium's sendKeys method.
+     *
+     * @param driver the WebDriver instance being used.
+     * @param filePath the full path to the file to be uploaded.
+     * @param fileInputLocator the By locator for the file input element.
+     * @throws InterruptedException if the thread sleep is interrupted.
+     */
+    public  void uploadFile( String filePath, By fileInputLocator) throws InterruptedException {
+        // Find the file input element on the web page
+        WebElement fileInput = driver.findElement(fileInputLocator);
 
+        // Wait for 5 seconds to ensure the page is ready
+        Thread.sleep(5000);
 
+        // Send the file path to the input element, triggering the file upload dialog
+        fileInput.sendKeys(filePath);
+    }
+	
+	
+    /**
+     * Clicks on a web element using JavaScript.
+     *
+     * @param driver the WebDriver instance being used.
+     * @param elementLocator the By locator for the element to be clicked.
+     */
+    public  void clickElementUsingJavaScript( By elementLocator) {
+        // Find the element
+        WebElement element = driver.findElement(elementLocator);
+
+        // Cast driver to JavascriptExecutor
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Execute JavaScript to perform click action
+        js.executeScript("arguments[0].click();", element);
+    }
 }
 
 
