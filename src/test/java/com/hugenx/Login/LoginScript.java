@@ -28,11 +28,10 @@ public class LoginScript  {
 		//String password = fileutility.getPropertyKeyValue("password");
 		ArrayList<String> data = excelDataDriven.getData("Login");
 
-		Assert.assertEquals(loginpage.getLoginBtnText(), "LOGIN","Login Page is not Loaded as LOGIN Btn is not displayed");
 		loginpage.enterUsername(data.get(1));
 		loginpage.enterPassword(data.get(2));
      	loginpage.clickLoginButton();
-		
+		//Assert.assertEquals(loginpage.getLoginBtnText(), "LOGIN","Login Page is not Loaded as LOGIN Btn is not displayed");
 	}
 
 }

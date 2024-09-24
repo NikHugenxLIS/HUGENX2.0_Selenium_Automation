@@ -6,7 +6,7 @@
   </listeners>
   <test thread-count="5" name="D:/Selenium Project/Selenium_Automation/src/test/java/com/hugenx/runner/Login.java(failed)" verbose="0">
     <classes>
-      <class name="com.hugenx.runner.Login">
+      <class name="com.hugenx.runner.LoginTest">
         <methods>
           <include name="loginInToTheApplication"/>
           <include name="configBC"/>
@@ -14,7 +14,7 @@
           <include name="configBM"/>
           <include name="configAM"/>
         </methods>
-      </class> <!-- com.hugenx.runner.Login -->
+      </class> <!-- com.hugenx.runner.LoginTest -->
     </classes>
   </test> <!-- D:/Selenium Project/Selenium_Automation/src/test/java/com/hugenx/runner/Login.java(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
